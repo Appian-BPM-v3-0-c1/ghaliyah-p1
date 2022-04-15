@@ -1,13 +1,18 @@
 package Main.Java.com.Revature.Store.ui;
 
+import Main.Java.com.Revature.Store.daos.CartDAO;
+import Main.Java.com.Revature.Store.models.Cart;
 import Main.Java.com.Revature.Store.models.Watch;
 import Main.Java.com.Revature.Store.models.User;
 
+import Main.Java.com.Revature.Store.services.CartService;
 import Main.Java.com.Revature.Store.services.WatchService;
+import com.sun.deploy.util.JVMParameters;
 
 
 import java.util.List;
 import java.util.Scanner;
+
 
 import static Main.Java.com.Revature.Store.services.WatchService.getWatchDAO;
 
@@ -16,6 +21,11 @@ public class WatchesMenu implements Imenu {
 
     public WatchesMenu(WatchService watchService) {
         this.watchService = watchService;
+    }
+
+    private final User user() {
+        return user();
+
     }
 
     @Override
@@ -31,6 +41,7 @@ public class WatchesMenu implements Imenu {
             System.out.println("[1] Watches by Brand");
             System.out.println("[2] Add Watch to Cart");
             System.out.println("[3] Checkout Menu");
+            System.out.println("[4] Design a watch for fun");
             System.out.println("[X] Exit");
 
             System.out.println("\nHello valued customer, please make a selection");
@@ -47,6 +58,8 @@ public class WatchesMenu implements Imenu {
                     User user = null;
                     new CheckoutMenu(user).start();
                     break;
+                case '4':
+                    break;
                 case 'x':
                     exit = true;
                     break;
@@ -56,6 +69,9 @@ public class WatchesMenu implements Imenu {
             }
         }
     }
+
+
+
 
     private void viewByBrand() {
         String brand = " ";
@@ -68,13 +84,10 @@ public class WatchesMenu implements Imenu {
 
             if (watches.isEmpty()) {
                 System.out.println("Sorry that was invalid");
-
-                }
             }
         }
     }
 
-
-
-
-
+    private void addWatch(java.util.List<Watch> watchList) {
+            }
+}

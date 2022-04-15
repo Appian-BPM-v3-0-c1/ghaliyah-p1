@@ -26,9 +26,10 @@ public class Mainmenu implements Imenu {
             System.out.println("\n Welcome to Ghaliyah's Watches!");
             System.out.println("[1] Purchase Watches");
             System.out.println("[2] Search for Watches");
-            System.out.println("[3] Checkout Menu");
-            System.out.println("[4] View Login Menu");
-            System.out.println("[5] Create Watches");
+            System.out.println("[3] Design A Watch for Fun");
+            System.out.println("[4] Checkout Menu");
+            System.out.println("[5] View Login Menu");
+            System.out.println("[6] Create Watches");
             System.out.println("[X] Exit");
 
             System.out.println("\nHello valued customer, please make a selection");
@@ -44,13 +45,15 @@ public class Mainmenu implements Imenu {
                     new WatchDAO().findAllWatch();
                     break;
                 case '3':
+                    new DesignWatchMenu().start();
+                case '4':
                     User user = new User();
                     new CheckoutMenu(user).start();
                     break;
-                case '4':
+                case '5':
                     new LoginMenu(new UserService(new UserDAO())).start();
                     break;
-                case '5':
+                case '6':
                     createWatch();
                     break;
                 case 'x':

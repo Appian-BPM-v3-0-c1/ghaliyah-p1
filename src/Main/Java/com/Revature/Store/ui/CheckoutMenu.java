@@ -11,13 +11,14 @@ import Main.Java.com.Revature.Store.services.WatchService;
 import java.util.List;
 import java.util.Scanner;
 
+import static Main.Java.com.Revature.Store.services.CartService.getCartDAO;
 import static Main.Java.com.Revature.Store.services.WatchService.getWatchDAO;
 
 public class CheckoutMenu implements Imenu {
     private final User user;
 
-    private CartService cartService;
-    private Object List;
+    private boolean cartService;
+
 
     public CheckoutMenu(User user) {
         this.user = user;
@@ -65,7 +66,7 @@ public class CheckoutMenu implements Imenu {
     }
 
     private void viewCart() {
-        List<Cart> carts = (List<Cart>) CartService.getCartDAO().findByID(user.getId());
+        List<Cart> carts = (List<Cart>) getCartDAO().findByID(user.getId());
 
         while (true) {
             Scanner scan = new Scanner(System.in);
@@ -97,7 +98,7 @@ public class CheckoutMenu implements Imenu {
         System.out.println("Thanks for purchasing with us");
 
         for (Cart c : carts) {
-            CartService.getCartDAO().removeByID(c.getUser_id());
+            cartService = getCartDAO().removeByID(c.getUser_id());
 
         }
     }
@@ -145,7 +146,7 @@ public class CheckoutMenu implements Imenu {
                         cart.setWatch_id(thisWatch.getId());
                         cart.setUser_id(user.getId());
                         cart.setInventory_id(thisWatch.getId());
-                        cartService.getCartDAO().save(cart);
+                        getCartDAO().save(cart);
 
                         System.out.println("Wonderful, the watch was added to your cart successfully");
                         break;

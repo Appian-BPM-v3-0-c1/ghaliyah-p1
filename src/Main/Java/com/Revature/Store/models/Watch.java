@@ -75,4 +75,8 @@ public class Watch {
 
     public void add(Watch watch) {
     }
+
+    public int getWatchId() {
+        return 0;
+    }
 }

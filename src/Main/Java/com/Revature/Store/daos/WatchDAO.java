@@ -128,6 +128,13 @@ public class WatchDAO implements CrudDAO<Watch> {
 
     public void findAllWatch() {
     }
+
+    public List<Watch> viewWatch() {
+        List<Watch> watchList = viewWatch();
+        List<Watch> watchList1 = watchList;
+        return watchList1;
+    }
+
 }
 
 
