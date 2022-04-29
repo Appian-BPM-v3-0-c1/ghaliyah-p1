@@ -1,6 +1,7 @@
 # ghaliyah-p1
 
-Project Name: 
+Project Name:
+
     Ghaliyah's Watches 
     
 Project Description: 
