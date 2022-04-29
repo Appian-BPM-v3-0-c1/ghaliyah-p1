@@ -5,8 +5,11 @@ Project Name:
     Ghaliyah's Watches 
     
 Project Description: 
-
-    At Ghaliyah's Watches, which is an online store, customers can shop for watches by brand, type, or create their own watch just for fun. Customers are also allowed to create an account with the company if they wish to do so using a username, password, first and last name, and email address. They can also search for, add, remove, and modify items in their cart. What makes Ghaliyah's Watches captivating is that we sell all sorts of watches from luxury to analog. In the Design Watch Menu, customers have the freedom to create their own watch for fun. They can create the brand name, the type, and how much they would want to sell the watch for if it was actually available on the market. 
+    At Ghaliyah's Watches, which is an online store, customers can shop for watches by brand, type, or create their own watch just for fun. Customers are also allowed 
+    to create an account with the company if they wish to do so using a username, password, first and last name, and email address. They can also search for, add, 
+    remove, and modify items in their cart. What makes Ghaliyah's Watches captivating is that we sell all sorts of watches from luxury to analog. In the Design Watch 
+    Menu, customers have the freedom to create their own watch for fun. They can create the brand name, the type, and how much they would want to sell the watch for if
+    it was actually available on the market. 
     
 Technologies Used:
 
