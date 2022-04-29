@@ -15,20 +15,32 @@ Technologies Used:
 
 
   Java 17
-  Intellij IDEA Community Edition -version 2022.1  
+  
+  Intellij IDEA Community Edition -version 2022.1
+  
   ProsgresSQL 14
+  
   Github
+  
   GitBash- version 2.35
+  
   DBeaver Community Edition-version 22.03
+  
+  
   LucidChart
   
 Features:
 
 -View all menus
+
 -Create a watch store
+
 -Search for watches
+
 -Desgin a watch
+
         To-Do List:
+        
       -Fix login menu errors
       -Ensure certain pieces of code are correctly breaking out of the loop like I want them to
       -Improve upon the order history details 
