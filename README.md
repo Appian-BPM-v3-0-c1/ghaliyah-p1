@@ -14,44 +14,51 @@ Project Description:
 Technologies Used:
 
 
-  Java 17
+     Java 17
   
-  Intellij IDEA Community Edition -version 2022.1
+     Intellij IDEA Community Edition -version 2022.1
   
-  ProsgresSQL 14
+     ProsgresSQL 14
   
-  Github
+     Github
   
-  GitBash- version 2.35
+     GitBash- version 2.35
   
-  DBeaver Community Edition-version 22.03
+     DBeaver Community Edition-version 22.03
   
-  
-  LucidChart
+     LucidChart
   
 Features:
 
--View all menus
+    -View all menus
 
--Create a watch store
+    -Create a watch store
 
--Search for watches
+    -Search for watches
 
--Desgin a watch
+    -Desgin a watch
 
-        To-Do List:
+To-Do List:
         
       -Fix login menu errors
+      
       -Ensure certain pieces of code are correctly breaking out of the loop like I want them to
+      
       -Improve upon the order history details 
+      
       -Improve upon ensuring information for the user logged in is reporting to tables in DBeaver
+      
       
 Getting Started:
 
 
 
 
+
+
 Usage:
+
+
 
 
 
